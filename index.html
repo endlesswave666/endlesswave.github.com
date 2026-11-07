@@ -108,7 +108,9 @@ video:-webkit-full-screen{object-fit:contain!important;aspect-ratio:auto!importa
 .subhead--in{margin:clamp(28px,4vw,40px) 0 0!important}
 .sec__h .subhead--in:first-child{margin-top:0!important}
 .subhead{text-align:center;font-size:clamp(26px,3.4vw,36px);font-weight:700;letter-spacing:-.035em;margin-bottom:clamp(24px,3vw,36px)}
-.hvs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.hvs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;max-width:900px;margin:0 auto}
+.hv__ini{width:34px;height:34px;border-radius:50%;flex:none;display:grid;place-items:center;background:var(--tile-2);color:var(--text);font-weight:700;font-size:14px}
+.hv__ini--lg{width:64px;height:64px;font-size:24px;background:rgba(255,255,255,.08)}
 .hv{border-radius:28px;background:var(--tile);overflow:hidden;display:flex;flex-direction:column;transition:transform .35s cubic-bezier(.2,.8,.2,1)}
 .hv:hover{transform:scale(1.015)}
 .hv__media{position:relative;display:block;width:100%;aspect-ratio:16/9;border:0;padding:0;background:#000;cursor:pointer;overflow:hidden}
@@ -247,25 +249,36 @@ footer{padding-block:40px 56px;text-align:center;font-size:12px;color:var(--dim)
         </div>
       </article>
       <article class="hv">
-        <button class="hv__media" type="button" data-yt="I9m258ZFYBM" aria-label="Смотреть ролик для Е-МИР Медиа">
+        <button class="hv__media" type="button" data-yt="TkIk8gJRgmY" aria-label="Смотреть ролик для Е-МИР Медиа">
           <span class="hv__fallback"><img src="img/ava-emir.webp" alt=""></span>
-          <img class="hv__thumb" src="https://img.youtube.com/vi/I9m258ZFYBM/maxresdefault.jpg" alt="" loading="lazy" onerror="this.remove()">
+          <img class="hv__thumb" src="https://img.youtube.com/vi/TkIk8gJRgmY/maxresdefault.jpg" alt="" loading="lazy" onerror="this.remove()">
           <span class="hv__play" aria-hidden="true"></span>
         </button>
         <div class="hv__cap">
           <div class="hv__who"><img src="img/ava-emir.webp" alt=""><div><b>Е-МИР Медиа</b><span>YouTube · 3 тыс.</span></div></div>
-          <a class="hv__yt" href="https://www.youtube.com/watch?v=I9m258ZFYBM" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
+          <a class="hv__yt" href="https://www.youtube.com/watch?v=TkIk8gJRgmY" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
         </div>
       </article>
       <article class="hv">
-        <button class="hv__media" type="button" data-yt="ifaDH_38jEk" aria-label="Смотреть ролик для oxy">
+        <button class="hv__media" type="button" data-yt="byMmm87cAmM" aria-label="Смотреть ролик для oxy">
           <span class="hv__fallback"><img src="img/ava-oxy.webp" alt=""></span>
-          <img class="hv__thumb" src="https://img.youtube.com/vi/ifaDH_38jEk/maxresdefault.jpg" alt="" loading="lazy" onerror="this.remove()">
+          <img class="hv__thumb" src="https://img.youtube.com/vi/byMmm87cAmM/maxresdefault.jpg" alt="" loading="lazy" onerror="this.remove()">
           <span class="hv__play" aria-hidden="true"></span>
         </button>
         <div class="hv__cap">
           <div class="hv__who"><img src="img/ava-oxy.webp" alt=""><div><b>oxy</b><span>YouTube · 500</span></div></div>
-          <a class="hv__yt" href="https://www.youtube.com/watch?v=ifaDH_38jEk" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
+          <a class="hv__yt" href="https://www.youtube.com/watch?v=byMmm87cAmM" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
+        </div>
+      </article>
+      <article class="hv">
+        <button class="hv__media" type="button" data-yt="J_y0U4VCPGg" aria-label="Смотреть ролик для onmyway">
+          <span class="hv__fallback"><span class="hv__ini hv__ini--lg">O</span></span>
+          <img class="hv__thumb" src="https://img.youtube.com/vi/J_y0U4VCPGg/maxresdefault.jpg" alt="" loading="lazy" onerror="this.remove()">
+          <span class="hv__play" aria-hidden="true"></span>
+        </button>
+        <div class="hv__cap">
+          <div class="hv__who"><span class="hv__ini">O</span><div><b>onmyway</b><span>YouTube · 10 тыс.</span></div></div>
+          <a class="hv__yt" href="https://www.youtube.com/watch?v=J_y0U4VCPGg" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
         </div>
       </article>
       </div>
@@ -368,7 +381,7 @@ footer{padding-block:40px 56px;text-align:center;font-size:12px;color:var(--dim)
   });
 
   // RU / EN switch
-  var EN={"Работы": "Work", "Отзывы": "Reviews", "Обо мне": "About", "Привет! Я Ян, монтирую короткие и длинные видео": "Hi! I'm Yan, I edit short and long-form videos", "1 000 000+": "1,000,000+", "просмотров на видео моих клиентов": "views on my clients' videos", "Доставлено": "Delivered", "Написать в Telegram": "Message me on Telegram", "Смотреть работы ›": "See my work ›", "Вертикальные работы": "Vertical videos", "Видео, которые не пролистывают": "Videos people don't scroll past", "Рилс 01": "Reel 01", "Рилс 02": "Reel 02", "Рилс 03": "Reel 03", "Рилс 04": "Reel 04", "Горизонтальные видео": "Horizontal videos", "Выстраиваю понятную историю видео": "I build a clear story in every video", "YouTube · 40 тыс.": "YouTube · 40K", "YouTube · 3 тыс.": "YouTube · 3K", "YouTube · 338 тыс.": "YouTube · 338K", "Instagram · 11,5 тыс.": "Instagram · 11.5K", "YouTube · 5 тыс.": "YouTube · 5K", "Святослав Коненков": "Svyatoslav Konenkov", "Е-МИР Медиа": "E-MIR Media", "Отзывы.": "Reviews.", "Что говорят авторы, с которыми я работал.": "What creators I've worked with say.", "Отзывы клиентов": "Client reviews", "Работает быстро и качественно. За эти деньги найти кого-то лучше непросто.": "Works fast and delivers quality. Hard to find anyone better for this price.", "По ролику всё супер, в оговоренные сроки, все правки были внесены точно как хотел.": "Everything about the video is great — delivered on time, and every edit was made exactly the way I wanted.", "Очень хороший, исполнительный молодой человек. Выполнял работы в срок, замечания по видео исполнялись оперативно.": "A very good, reliable young man. Delivered on time, and feedback on the videos was handled quickly.", "У Яна всё прекрасно с красивой графикой, всегда соблюдает и даже опережает дедлайны, при этом не приходится вносить правки.": "Yan's graphics are beautiful. He always meets and even beats deadlines, and I don't have to ask for revisions.", "Ян отличный монтажёр. За эти же деньги найти кого-то лучше будет непросто.": "Yan is a great editor. Finding someone better for the same money won't be easy.", "Спасибо! Буду рад поработать и с вами": "Thank you! I'd be happy to work with you too", "Прочитано": "Read", "Обо мне.": "About me.", "Готовы выйти на новый уровень?": "Ready to take it to the next level?", "1 млн+": "1M+", "просмотров": "views", "работ": "projects", "1+ год": "1+ year", "в Pr и Ae": "in Pr & Ae", "Написать": "Message me", "© 2026 endlesswave · Ян": "© 2026 endlesswave · Yan"};
+  var EN={"Работы": "Work", "Отзывы": "Reviews", "Обо мне": "About", "Привет! Я Ян, монтирую короткие и длинные видео": "Hi! I'm Yan, I edit short and long-form videos", "1 000 000+": "1,000,000+", "просмотров на видео моих клиентов": "views on my clients' videos", "Доставлено": "Delivered", "Написать в Telegram": "Message me on Telegram", "Смотреть работы ›": "See my work ›", "Вертикальные работы": "Vertical videos", "Видео, которые не пролистывают": "Videos people don't scroll past", "Рилс 01": "Reel 01", "Рилс 02": "Reel 02", "Рилс 03": "Reel 03", "Рилс 04": "Reel 04", "Горизонтальные видео": "Horizontal videos", "Выстраиваю понятную историю видео": "I build a clear story in every video", "YouTube · 40 тыс.": "YouTube · 40K", "YouTube · 3 тыс.": "YouTube · 3K", "YouTube · 338 тыс.": "YouTube · 338K", "Instagram · 11,5 тыс.": "Instagram · 11.5K", "YouTube · 5 тыс.": "YouTube · 5K", "YouTube · 10 тыс.": "YouTube · 10K", "Святослав Коненков": "Svyatoslav Konenkov", "Е-МИР Медиа": "E-MIR Media", "Отзывы.": "Reviews.", "Что говорят авторы, с которыми я работал.": "What creators I've worked with say.", "Отзывы клиентов": "Client reviews", "Работает быстро и качественно. За эти деньги найти кого-то лучше непросто.": "Works fast and delivers quality. Hard to find anyone better for this price.", "По ролику всё супер, в оговоренные сроки, все правки были внесены точно как хотел.": "Everything about the video is great — delivered on time, and every edit was made exactly the way I wanted.", "Очень хороший, исполнительный молодой человек. Выполнял работы в срок, замечания по видео исполнялись оперативно.": "A very good, reliable young man. Delivered on time, and feedback on the videos was handled quickly.", "У Яна всё прекрасно с красивой графикой, всегда соблюдает и даже опережает дедлайны, при этом не приходится вносить правки.": "Yan's graphics are beautiful. He always meets and even beats deadlines, and I don't have to ask for revisions.", "Ян отличный монтажёр. За эти же деньги найти кого-то лучше будет непросто.": "Yan is a great editor. Finding someone better for the same money won't be easy.", "Спасибо! Буду рад поработать и с вами": "Thank you! I'd be happy to work with you too", "Прочитано": "Read", "Обо мне.": "About me.", "Готовы выйти на новый уровень?": "Ready to take it to the next level?", "1 млн+": "1M+", "просмотров": "views", "работ": "projects", "1+ год": "1+ year", "в Pr и Ae": "in Pr & Ae", "Написать": "Message me", "© 2026 endlesswave · Ян": "© 2026 endlesswave · Yan"};
   var nodes=[],w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
   while(w.nextNode()){var n=w.currentNode,t=n.nodeValue.trim();if(t&&EN[t]&&!n.parentNode.closest('script'))nodes.push([n,n.nodeValue,t])}
   var sw=document.querySelector('.lang');
